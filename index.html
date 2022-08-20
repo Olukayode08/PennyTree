@@ -5,21 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Pennytree</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="pennytree.css">
 </head>
 <body>
-    <div class="header">
-    <img src="logo.jpg" alt="Pennytree" id="penn-logo">
-    <label for="toggle">&#9776;</label>
-    <input type="checkbox" id="toggle">
-    <div class="nav">
-        <a href="" class="penn-nav">Home</a>
-        <a href="" class="penn-nav">Products</a>
-        <a href="" class="penn-nav">Story</a>
-        <a href="" class="penn-nav">FAQs</a>
-        <a href="" class="penn-nav">Blogs</a>
-        <a href="" class="penn-nav space">Contact</a>
+    <div class="big-screen">
+        <img src="logo.jpg" alt="Ikonik" class="big-screen-logo">
+        <ul class="big-screen-navbar">
+            <li><a href="#" class="big-screen-bar">Home</a></li>
+            <li><a href="#" class="big-screen-bar">Product</a></li>
+            <li><a href="#" class="big-screen-bar">Story</a></li>
+            <li><a href="#" class="big-screen-bar">FAQs</a></li>
+            <li><a href="#" class="big-screen-bar">Blogs</a></li>
+            <li><a href="#" class="space big-screen-bar">Contact</a></li>
+        </ul>
     </div>
+    <div class="small-screen">
+        <button class="nav-btn open-btn">
+            <i class="fas fa-bars" id="open"></i>
+        </button>
+        <img src="logo.jpg" alt="Ikonik" class="small-screen-logo">
+        <div class="nav nav-black">
+            <div class="nav  nav-white">
+                <button class="nav-btn close-btn">
+                    <i class="fas fa-times" id="close"></i>
+                </button>
+                <div class="nav-bar">
+                    <a href="#" class="bar">Home</a>
+                    <a href="#" class="bar">Product</a>
+                    <a href="#" class="bar">Story</a>
+                    <a href="#" class="bar">FAQS</a>
+                    <a href="#" class="bar">Blogs</a>
+                    <a href="#" class="bar">Contact</a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="secone">
         <div class="left">
@@ -179,6 +201,7 @@
                 <p class="okay">9A, Oriwu Street Lekki Phase 1 - Lagos, Nigeria</p>
         </div>
     </div>
-    <footer>© Copyright 2022 PennyTree Business Limited.</footer>
+    
+    <script src="pennytree.js" type="text/javascript"></script><footer>© Copyright 2022 PennyTree Business Limited.</footer>
 </body>
 </html>
