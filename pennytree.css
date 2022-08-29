@@ -379,7 +379,7 @@ body{
     font-size: 17px;
     opacity: 0.87;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .grid-three {
         display: grid;
         gap: 20px 3px;
@@ -394,7 +394,6 @@ body{
     .app {
         font-size: 20px;
     }
-    
     .details {
         font-size: 17px;
         opacity: 0.87;
@@ -403,7 +402,7 @@ body{
 /* SECTION FOUR */
 .secfour{
     background: transparent linear-gradient(90deg, rgba(20, 184, 166, 1) 0%, rgba(107, 225, 154, 1) 100%) 0% 0% no-repeat padding-box;
-    padding: 5em 0;
+    padding: 2.5em 0;
 }
 .four{
     margin: 0 8em;
@@ -428,6 +427,19 @@ body{
     border-radius: 30px;
     margin: 0 15px;
     padding: 15px 40px;
+}
+.hover{
+    margin: 10px 0;
+}
+#app-store{
+    font-size: 25px;
+    color: #fff;
+}
+#app-store:hover{
+    color: #000;
+}
+.hover:hover{
+    color: #000;
 }
 #link:hover{
     background: #fff;
@@ -621,13 +633,16 @@ form{
     margin: 15px 0;
     border: 0;
     font-family: inherit;
+    font-size: 18px;
 }
 input::placeholder{
     font-family: inherit;
-    font-size: 17px;
+    font-size: 18px;
+    opacity: 1;
 }
 .cust-info:focus{
     outline: 0;
+    font-size: 19px;
 }
 .cust-message{
     width: 95%;
@@ -636,6 +651,7 @@ input::placeholder{
                 -5px -5px 10px #ffffff;
     margin: 15px 0;
     border: 0;
+    font-size: 19px;
 }
 .cust-message:focus {
     outline: 0;
@@ -719,8 +735,8 @@ input::placeholder{
     color: #20c997;
 }
 .fa-brands{
-    margin: 10px;
-    padding: 10px;
+    margin: 6px;
+    padding: 6px;
     color: #adb5bd;
 }
 .fa-brands:hover{
