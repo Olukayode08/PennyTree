@@ -1,7 +1,12 @@
+    @import url('https://fonts.googleapis.com/css2?family=ED Garamond&display=swap');
+*{
+    box-sizing: border-box;
+}
 body{
-    font-family: -apple-system, "Segoe UI", 'Roboto', "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "EB Garamond", sans-serif;
     margin: 0;
     padding: 0;
+    background: #ffffff;
 }
 /* HEADER */
 .big-screen {
@@ -12,6 +17,7 @@ body{
     z-index: 10;
     height: 70px;
     background-color: #fff;
+    box-shadow: 0 10px 28px 1px rgba(3, 13, 40, 0.23);
 }
 
 .big-screen-logo {
@@ -29,8 +35,8 @@ body{
     text-decoration: none;
     margin: 20px;
     color: #000;
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 600;
 }
 .big-screen-bar:hover{
     color: #20c997;
@@ -60,11 +66,11 @@ body{
     }
     .small-screen {
         display: block;
-        margin-bottom: 2em;
+        /* margin-bottom: 2em; */
         position: sticky;
         top: 0;
         z-index: 10;
-        height: 70px;
+        height: 80px;
         background-color: #fff;
     }
     .small-screen-logo {
@@ -101,7 +107,7 @@ body{
         width: 50%;
         max-width: 480px;
         min-width: 320px;
-        height: 300px;
+        height: 400px;
         transition-delay: 0.4s;
     }
 
@@ -112,7 +118,7 @@ body{
     .nav-white {
         background-color: #fff;
         width: 95%;
-        height: 300px;
+        height: 400px;
         padding: 40px;
         position: relative;
         transition-delay: 0s;
@@ -141,7 +147,7 @@ body{
     .bar {
         width: 90%;
         color: rgb(34, 31, 31);
-        font-size: 14px;
+        font-size: 18px;
         text-decoration: none;
         padding: 10px 0;
         align-items: center;
@@ -159,12 +165,11 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 7em;
-    top: 0;
-    width: 80%;
+    margin: 0 9em;
 }
 .life-style{
     font-size: 47px;
+    font-family: "EB Garamond", sans-serif;
 }
 .life-color{
     color: #14b8a6;;
@@ -173,20 +178,22 @@ body{
     color: #2d3443;
 }
 .about{
-    font-size: 16px;
+    font-size: 18px;
     opacity: 0.77;
     letter-spacing: 0.2px;
 }
 .left{
-    width: 90%;
-    margin: auto;
-    padding: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 .right{
-    width: 90%;
+    width: 100%;
 }
 #iPhone{
-    width: 95%;
+    width: 100%;
 }
 .download{
     display: flex;
@@ -197,19 +204,22 @@ body{
 }
 @media screen and (max-width: 1200px) {
     .secone{
+        margin: 0 90px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .secone{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0;
-        margin: 0 auto;
+        margin: 0 20px;
     }
     .download{
         justify-content: center;
     }
     #iPhone {
-        width: 100%;
-        text-align: center;
+        width: 65%;
     }
     .left{
         width: 90%;
@@ -226,7 +236,7 @@ body{
         width: 100%;
     }
     .life-style {
-        font-size: 30px;
+        font-size: 34px;
         text-align: center;
     }
     .about{
@@ -258,45 +268,67 @@ body{
     padding: 1.5em 20px;
 }
 #icon1{
-    width: 12%;
+    width: 15%;
     background: #5281f03b;
     border-radius: 100%;
     margin-top: 10px;
+    padding: 10px;
 }
 #icon2{
-    width: 12%;
+    width: 15%;
     background: #adb5bd;
     margin-left: 10px;
     border-radius: 100%;
     margin-top: 10px;
-    animation: jump 2s ease-in-out infinite;
+    padding: 10px;
 }
 #icon3{
-    width: 12%;
-    background: #ffffff;
+    width: 15%;
+    background: #e9e37625;
     border-radius: 100%;
     margin-top: 10px;
-    animation: jump 2s ease-in-out infinite;
+    padding: 10px;
 }
 #icon4{
-    width: 12%;
+    width: 15%;
     background: #2d3443;
     border-radius: 100%;
     margin-top: 10px;
+    padding: 10px;
 }
 #icon5{
-    width: 12%;
+    width: 18%;
     background: #2d3443;
     border-radius: 100%;
     margin-top: 10px;
     background: #27e3d02c;
+    padding: 10px;
 }
 .saving-lifestyle{
-    opacity: 0.67;
+    opacity: 0.9;
     text-align: center;
+    font-size: 17px;
 }
 .saving-rules{
-    font-size: 25px;
+    font-size: 28px;
+}
+@media screen and (max-width: 1050px) {
+#icon1 {
+        width: 8%;
+    }
+    #icon2 {
+        width: 8%;
+    }
+    #icon3 {
+        width: 9%;
+    }
+    #icon4 {
+        width: 8%;
+    }
+    #icon5 {
+        width: 8%;
+    }
+
 }
 @media screen and (max-width: 800px) {
     .grid-sec{
@@ -306,7 +338,6 @@ body{
         margin: 0;
         padding: 0;
         grid-template-columns: repeat(1, 1fr);
-        /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
     }
 }
 /* SECTION THREE */
@@ -316,10 +347,9 @@ body{
 }
 .sec-three-header{
     font-size: 45px;
-    font-weight: lighter;
+    opacity: 0.67;
 }
 .work{
-    font-weight: bolder;
     font-size: 45px;
 }
 .grid-three{
@@ -333,26 +363,27 @@ body{
     text-align: center;
 }
 .num{
-    font-size: 27px;
-    width: 60px;
-    background: #20c997;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    background: transparent linear-gradient(90deg, rgba(20, 184, 166, 1) 0%, rgba(107, 225, 154, 1) 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
     border-radius: 100%;
     margin: auto;
 }
 .app{
     font-size: 30px;
-    opacity: 0.77;
+    opacity: 0.87;
 }
 .details{
     font-size: 17px;
-    opacity: 0.67;
+    opacity: 0.87;
 }
 @media screen and (max-width: 900px) {
     .grid-three {
         display: grid;
         gap: 20px 3px;
         grid-template-columns: repeat(2, 1fr);
-        /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
     }
     .secthree{
         margin: 0 5px;
@@ -361,81 +392,88 @@ body{
         text-align: center;
     }
     .app {
-        font-size: 18px;
+        font-size: 20px;
     }
     
     .details {
-        font-size: 15px;
-        opacity: 0.67;
+        font-size: 17px;
+        opacity: 0.87;
     }
 }
 /* SECTION FOUR */
 .secfour{
-    background: #20c997;
-    padding: 3em 0;
-    margin: 10px;
+    background: transparent linear-gradient(90deg, rgba(20, 184, 166, 1) 0%, rgba(107, 225, 154, 1) 100%) 0% 0% no-repeat padding-box;
+    padding: 5em 0;
 }
 .four{
     margin: 0 8em;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.links{
-    width: 30%;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 .light-font{
     font-weight: lighter;
 }
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 #link{
-    margin: auto;
-    font-size: 13px;
+    font-size: 19px;
     text-decoration: none;
     color: #fff;
     border: 1px solid white;
-    border-radius: 15px;
+    border-radius: 30px;
     margin: 0 15px;
-    padding: 10px;
+    padding: 15px 40px;
 }
 #link:hover{
     background: #fff;
     color: black;
+    transition: all 0.4s ease-in;
 }
 .tree{
-    font-size: 3em;
+    width: 100%;
+    font-size: 3.3em;
     color: #fff;
 }
 @media screen and (max-width: 1200px) {
     .secfour{
-        padding: 2em 0;
         width: 100%;
-        margin: auto;
     }
     .four{
         display: flex;
         flex-direction: column;
-        text-align: center;
-        margin: 0 0;
+        align-items: center;
+        justify-content: center;
+        margin: 0 20px;
     }
     .tree{
-        margin: auto;
         font-size: 2em;
+        text-align: center;
+        width: 100%;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     #link{
         margin: 10px 0;
     }
-    .links{
-        padding: 20px 0;
-    }
 }
 /* SECTION FIVE */
+.section-five{
+    background-color: rgb(248, 246, 246);
+}
 .secfive{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 2em 150px;
-    background-color: rgb(248, 246, 246);
+    margin: 0px 150px;
 }
 .secfive-left{
     width: 90%;
@@ -449,7 +487,7 @@ body{
     font-size: 40px;
 }
 .brief-about{
-    font-size: 15px;
+    font-size: 18px;
     line-height: 30px;
     font-weight: lighter;
     text-align: justify;
@@ -473,7 +511,7 @@ body{
     width: 60%;
     margin-left: 2em;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
     .secfive{
         display: flex;
         flex-direction: column;
@@ -492,21 +530,21 @@ body{
     }
     .more-about{
         width: 25%;
+        max-width: 120px;
         text-align: center;
         margin: auto;
-        padding: 5px;
     }
     .secfive-right{
         width: 100%;
         text-align: center;
     }
     #know-more{
-        width: 90%;
+        width: 75%;
         text-align: center;
         padding-top: 50px;
     }
     .about-pennytree {
-        font-size: 35px;
+        font-size: 39px;
     }
 }
 
@@ -514,6 +552,10 @@ body{
 .message{
     font-size: 35px;
     margin: 0;
+    opacity: 0.78;
+}
+.our-message{
+    font-weight: 600;
 }
 .secseven{
     display: flex;
@@ -578,6 +620,11 @@ form{
                 -5px -5px 10px #ffffff;
     margin: 15px 0;
     border: 0;
+    font-family: inherit;
+}
+input::placeholder{
+    font-family: inherit;
+    font-size: 17px;
 }
 .cust-info:focus{
     outline: 0;
@@ -594,15 +641,17 @@ form{
     outline: 0;
 }
 .btn{
-    padding: 17px 3em;
+    font-family: inherit;
+    padding: 20px 3.6em;
     background: #14b8a6;
     color: #fff;
     border: 0;
-    border-radius: 10px;
+    font-size: 20px;
 }
 .btn:hover{
     background: #fff;
     color: black;
+    border: 1px solid #20c997;
 }
 .btn:focus{
     outline: 0;
@@ -637,10 +686,9 @@ form{
     padding: 10px;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgb(248, 246, 246);
 }
 .logo-two{
-    width: 30%;
+    width: 40%;
 }
 .penny-font{
     opacity: 0.67;
@@ -657,12 +705,26 @@ form{
     text-decoration: none;
     margin: 15px 0;
     list-style: none;
+    font-size: 19px;
 }
 .okay{
     text-decoration: none;
     margin: 10px 0;
     list-style: none;
-    opacity: 0.6;
+    opacity: 0.69;
+    font-size: 17px;
+    cursor: pointer;
+}
+.okay:hover{
+    color: #20c997;
+}
+.fa-brands{
+    margin: 10px;
+    padding: 10px;
+    color: #adb5bd;
+}
+.fa-brands:hover{
+    color: #20c997;
 }
 @media screen and (max-width: 1100px) {
     .secnine{
@@ -674,7 +736,7 @@ form{
     margin: 0 auto;
     }
     .logo-two {
-        width: 40%;
+        width: 30%;
     }
     .first{
         width: 100%;
@@ -690,7 +752,8 @@ form{
 footer{
     margin: 4em 0;
     margin-left: 6em;
-    opacity: 0.67;
+    opacity: 0.87;
+    font-size: 19px;
 }
 @media screen and (max-width: 1100px) {
     footer{
