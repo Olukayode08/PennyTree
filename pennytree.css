@@ -59,7 +59,11 @@ body{
     background-color: #fff;
     margin-bottom: 3em;
 }
-
+@media screen and (max-width: 600px) {
+    .small-screen-logo {
+        width: 15%;
+        margin-top: 5px;
+    }
 @media screen and (max-width: 1000px) {
     .big-screen {
         display: none;
@@ -338,6 +342,18 @@ body{
         margin: 0;
         padding: 0;
         grid-template-columns: repeat(1, 1fr);
+    }
+       #icon5 {
+        width: 8%;
+    }
+}
+@media screen and (max-width: 600px) {
+       #icon5,
+       #icon4,
+       #icon3,
+       #icon2,
+       #icon5,{
+        width: 10%;
     }
 }
 /* SECTION THREE */
